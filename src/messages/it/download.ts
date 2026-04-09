@@ -1,0 +1,33 @@
+export const download = {
+  homeAria: "{appName} home",
+  title: "Scarica {appName}",
+  versionLine: "Versione {version} · macOS e Windows",
+  versionUnknown: "macOS e Windows",
+  missingUrls:
+    "Link di download non configurati. Imposta NEXT_PUBLIC_DOWNLOAD_MAC e NEXT_PUBLIC_DOWNLOAD_WIN.",
+  macPrimary: "Scarica per macOS",
+  macSub: "macOS 12+ · Apple Silicon e Intel",
+  winPrimary: "Scarica per Windows",
+  winSub: "Windows 10/11 · 64-bit",
+  switchToWin: "Usi Windows? Scarica qui →",
+  switchToMac: "Usi macOS? Scarica qui →",
+  unavailableMac: "macOS (non disponibile)",
+  unavailableWin: "Windows (non disponibile)",
+  installTitle: "Installazione",
+  macSteps: [
+    "Apri il file .dmg scaricato",
+    "Trascina l’app in Applicazioni",
+    "Al primo avvio: tasto destro → Apri (serve solo la prima volta)",
+    "Accedi con le credenziali ricevute via email",
+  ],
+  winSteps: [
+    "Apri il file .exe scaricato",
+    'Se compare "Windows ha protetto il PC": "Ulteriori informazioni" → "Esegui comunque"',
+    "Segui la procedura guidata",
+    "Accedi con le credenziali ricevute via email",
+  ],
+  issues: "Problemi con il download?",
+  github: "Scarica direttamente da GitHub →",
+  plansPrompt: "Ti serve Interview Pass o Pro?",
+  plansCta: "Vedi i piani →",
+};

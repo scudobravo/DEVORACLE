@@ -1,0 +1,27 @@
+export const contact = {
+  kicker: "Contacto",
+  title: "Envíanos un mensaje",
+  intro: "Elige un tema para enviar tu solicitud al equipo correcto.",
+  back: "← Volver al inicio",
+  form: {
+    topic: "Tema",
+    name: "Nombre",
+    email: "Correo",
+    message: "Mensaje",
+    placeholder: "Describe tu duda en pocas frases.",
+    minChars: "Mínimo 10 caracteres.",
+    submit: "Enviar mensaje",
+    sending: "Enviando…",
+    genericError: "Algo salió mal. Inténtalo de nuevo.",
+    networkError: "Error de red. Revisa tu conexión.",
+    success: "Gracias, recibimos tu mensaje y te responderemos pronto.",
+  },
+  topics: {
+    general: "Consulta general",
+    billing: "Facturación y suscripciones",
+    technical: "Soporte técnico",
+    partnership: "Partnership o prensa",
+    privacy: "Privacidad y protección de datos",
+    other: "Otro",
+  },
+}

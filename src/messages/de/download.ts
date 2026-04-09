@@ -1,0 +1,33 @@
+export const download = {
+  homeAria: "{appName} Startseite",
+  title: "{appName} herunterladen",
+  versionLine: "Version {version} · macOS und Windows",
+  versionUnknown: "macOS und Windows",
+  missingUrls:
+    "Download-Links fehlen. Setzen Sie NEXT_PUBLIC_DOWNLOAD_MAC und NEXT_PUBLIC_DOWNLOAD_WIN.",
+  macPrimary: "Für macOS herunterladen",
+  macSub: "macOS 12+ · Apple Silicon und Intel",
+  winPrimary: "Für Windows herunterladen",
+  winSub: "Windows 10/11 · 64-bit",
+  switchToWin: "Nutzen Sie Windows? Hier herunterladen →",
+  switchToMac: "Nutzen Sie macOS? Hier herunterladen →",
+  unavailableMac: "macOS (nicht verfügbar)",
+  unavailableWin: "Windows (nicht verfügbar)",
+  installTitle: "Installation",
+  macSteps: [
+    "Öffnen Sie die heruntergeladene .dmg-Datei",
+    "Ziehen Sie die App in Programme",
+    "Beim ersten Start: Rechtsklick → Öffnen (nur beim ersten Mal nötig)",
+    "Melden Sie sich mit den Daten aus der E-Mail an",
+  ],
+  winSteps: [
+    "Öffnen Sie die heruntergeladene .exe-Datei",
+    'Wenn „Windows hat Ihren PC geschützt“ erscheint: „Weitere Infos“ → „Trotzdem ausführen“',
+    "Folgen Sie dem Installationsassistenten",
+    "Melden Sie sich mit den Daten aus der E-Mail an",
+  ],
+  issues: "Probleme beim Download?",
+  github: "Direkt von GitHub laden →",
+  plansPrompt: "Interview Pass oder Pro?",
+  plansCta: "Zu den Plänen →",
+}
