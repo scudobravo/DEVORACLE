@@ -61,6 +61,7 @@ export function HomeMarketingPage({ locale, dict }: HomeMarketingPageProps) {
         </div>
       </section>
 
+
       <section id="features" className="relative overflow-hidden bg-surface-container-low px-6 py-28">
         <div
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,rgba(99,102,241,0.18),transparent)]"
