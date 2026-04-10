@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import {
   Bricolage_Grotesque,
   Inter,
@@ -38,6 +39,8 @@ const jetbrains = JetBrains_Mono({
   subsets: ["latin", "cyrillic"],
   variable: "--font-jetbrains",
 });
+
+const GA_MEASUREMENT_ID = "G-JHW5NBGZ3D";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -140,7 +143,21 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(howToLd) }}
         />
       </head>
-      <body className="font-body text-on-surface overflow-x-hidden antialiased">{children}</body>
+      <body className="font-body text-on-surface overflow-x-hidden antialiased">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics-gtag" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
