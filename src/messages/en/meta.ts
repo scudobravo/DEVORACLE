@@ -1,9 +1,10 @@
 export const meta = {
   siteName: "DevOracle",
+  logoAlt: "DevOracle — AI interview coaching app logo",
   home: {
-    title: "DevOracle — Real-Time AI Interview Coaching | Invisible to Screen Share",
+    title: "DevOracle — AI Interview Coaching for Zoom, Meet & Teams",
     description:
-      "The interview copilot for serious candidates. Live AI hints on macOS & Windows—optimized for Zoom, Meet, and Teams—while your interviewers only see you at your best.",
+      "On-device live AI coaching for technical interviews—stealth beside Zoom, Meet & Teams. Mac & Windows desktop app. See pricing and download.",
     keywords: [
       "AI interview coach",
       "real-time interview coaching",
@@ -15,12 +16,12 @@ export const meta = {
       "invisible interview tool",
       "DevOracle",
     ],
-    ogTitle: "DevOracle — Real-Time AI Coaching for Technical Interviews",
+    ogTitle: "DevOracle — AI Interview Coaching for Zoom, Meet & Teams",
     ogDescription:
-      "Sharpen every answer in real time. Stealth UI, desktop-grade privacy, built for high-stakes technical interviews.",
-    twitterTitle: "DevOracle — Real-Time AI for Technical Interviews",
+      "On-device live AI coaching for technical interviews—stealth beside Zoom, Meet & Teams. Mac & Windows desktop app. See pricing and download.",
+    twitterTitle: "DevOracle — AI Interview Coaching for Zoom, Meet & Teams",
     twitterDescription:
-      "Real-time coaching that stays off the record—built for FAANG-style loops and startup screens alike.",
+      "On-device live AI coaching for technical interviews—stealth beside Zoom, Meet & Teams. Mac & Windows desktop app. See pricing and download.",
   },
   contact: {
     title: "Contact — DevOracle",

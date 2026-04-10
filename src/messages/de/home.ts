@@ -2,9 +2,10 @@ export const home = {
   hero: {
     badge: "Live‑KI · Stealth‑UI · Mac & Windows",
     titleBefore: "Der",
-    titleHighlight: "On‑Device‑Copilot",
+    titleHighlight: "On‑Device‑KI‑Copilot",
     titleAfter: "für Interviews, die Sie nicht verlieren dürfen.",
-    dashboardImageAlt: "Screenshot des DevOracle-Dashboards",
+    dashboardImageAlt:
+      "DevOracle Desktop-App: Live-KI-Hinweise fürs Interview neben einem Videoanruf",
     body:
       "DevOracle flüstert Timing, Frameworks, Nachfragen – während Zoom, Meet oder Teams makellos bleiben. Sie wirken souverän. Sie haben den Plan.",
   },

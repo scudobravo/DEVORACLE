@@ -2,11 +2,12 @@ export const home = {
   hero: {
     badge: "Live AI · Stealth UI · Mac & Windows",
     titleBefore: "The",
-    titleHighlight: "on-device copilot",
+    titleHighlight: "on-device AI copilot",
     titleAfter: "for interviews you can't afford to lose.",
     body:
       "DevOracle whispers exactly what you need—timing, frameworks, follow-ups—while your Zoom, Meet, or Teams window stays pristine. Interviewers see confidence. You get the blueprint.",
-    dashboardImageAlt: "Screenshot of the DevOracle dashboard",
+    dashboardImageAlt:
+      "DevOracle desktop app: live AI interview coaching hints beside a video call",
   },
   demo: {
     live: "Live",

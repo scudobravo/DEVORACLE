@@ -31,7 +31,7 @@ export default async function ContactPage({ params }: PageProps) {
   return (
     <>
       <div className="grain-overlay" aria-hidden />
-      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} />
+      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} logoAlt={dict.meta.logoAlt} />
       <main className="mx-auto max-w-lg px-6 pb-24 pt-28 md:pt-32">
         <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-indigo-400">{dict.contact.kicker}</p>
         <h1 className="font-headline mb-4 text-3xl font-extrabold tracking-tight md:text-4xl">{dict.contact.title}</h1>

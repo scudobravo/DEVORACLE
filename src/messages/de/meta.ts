@@ -1,9 +1,10 @@
 export const meta = {
   siteName: "DevOracle",
+  logoAlt: "DevOracle-Logo — KI-Interview-Coaching-App",
   home: {
-    title: "DevOracle — KI-Interview-Coaching in Echtzeit | Unsichtbar für Screen-Sharing",
+    title: "DevOracle — KI-Interview-Coaching für Zoom, Meet & Teams",
     description:
-      "Der Interview-Copilot für ambitionierte Kandidaten. Live-KI-Hinweise unter macOS & Windows – optimiert für Zoom, Meet und Teams – während Ihre Gesprächspartner nur das Beste sehen.",
+      "On-Device-KI-Coaching für technische Interviews—diskret neben Zoom, Meet & Teams. Preise ansehen und Desktop-App herunterladen.",
     keywords: [
       "KI Interview Coach",
       "Interview Coaching Echtzeit",
@@ -15,12 +16,12 @@ export const meta = {
       "unauffälliges Interview Tool",
       "DevOracle",
     ],
-    ogTitle: "DevOracle — KI-Coaching für technische Interviews in Echtzeit",
+    ogTitle: "DevOracle — KI-Interview-Coaching für Zoom, Meet & Teams",
     ogDescription:
-      "Schärfen Sie jede Antwort live. Stealth-UI, Desktop-Datenschutz – für High-Stakes-Technik-Interviews.",
-    twitterTitle: "DevOracle — KI für technische Interviews in Echtzeit",
+      "On-Device-KI-Coaching für technische Interviews—diskret neben Zoom, Meet & Teams. Preise ansehen und Desktop-App herunterladen.",
+    twitterTitle: "DevOracle — KI-Interview-Coaching für Zoom, Meet & Teams",
     twitterDescription:
-      "Echtzeit-Coaching, das nicht im Protokoll hängt – für FAANG-Loops und Startup-Screens.",
+      "On-Device-KI-Coaching für technische Interviews—diskret neben Zoom, Meet & Teams. Preise ansehen und Desktop-App herunterladen.",
   },
   contact: {
     title: "Kontakt — DevOracle",

@@ -2,9 +2,10 @@ export const home = {
   hero: {
     badge: "IA en vivo · interfaz discreta · Mac y Windows",
     titleBefore: "El",
-    titleHighlight: "copiloto local",
+    titleHighlight: "copiloto de IA en el dispositivo",
     titleAfter: "para entrevistas que no puedes permitirte perder.",
-    dashboardImageAlt: "Captura de la interfaz de DevOracle",
+    dashboardImageAlt:
+      "App de escritorio DevOracle: sugerencias de coaching con IA junto a una videollamada",
     body: "DevOracle te sugiere timing, frameworks y siguientes pasos mientras tu llamada se mantiene limpia.",
   },
   demo: {

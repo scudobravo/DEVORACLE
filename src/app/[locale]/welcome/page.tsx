@@ -36,7 +36,7 @@ export default async function WelcomePage({ params, searchParams }: PageProps) {
   return (
     <>
       <div className="grain-overlay" aria-hidden />
-      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} />
+      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} logoAlt={dict.meta.logoAlt} />
       <main className="mx-auto max-w-2xl px-6 pb-24 pt-32 text-center">
         <h1 className="font-headline mb-4 text-4xl font-extrabold tracking-tight md:text-5xl">{w.title}</h1>
 

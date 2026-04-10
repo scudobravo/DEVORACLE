@@ -30,7 +30,7 @@ export default async function PrivacyPage({ params }: PageProps) {
   return (
     <>
       <div className="grain-overlay" aria-hidden />
-      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} />
+      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} logoAlt={dict.meta.logoAlt} />
       <LegalDocument locale={locale} doc={dict.privacy} backLabel={dict.contact.back} />
     </>
   );

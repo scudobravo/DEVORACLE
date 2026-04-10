@@ -12,9 +12,10 @@ type NavigationProps = {
   locale: Locale;
   nav: Messages["nav"];
   switcher: Messages["localeSwitcher"];
+  logoAlt: string;
 };
 
-export function Navigation({ locale, nav, switcher }: NavigationProps) {
+export function Navigation({ locale, nav, switcher, logoAlt }: NavigationProps) {
   const [open, setOpen] = useState(false);
   const home = withLocale("/", locale);
 
@@ -31,7 +32,7 @@ export function Navigation({ locale, nav, switcher }: NavigationProps) {
         <Link href={home} className="flex shrink-0 items-center" aria-label={nav.homeAria}>
           <Image
             src="/logo-DEVORACLE.svg"
-            alt="Devoracle"
+            alt={logoAlt}
             width={220}
             height={51}
             className="h-8 w-auto md:h-9"

@@ -2,9 +2,10 @@ export const home = {
   hero: {
     badge: "AI live · UI stealth · Mac e Windows",
     titleBefore: "Il",
-    titleHighlight: "copilota on-device",
+    titleHighlight: "copilota AI on-device",
     titleAfter: "per colloqui che non puoi permetterti di perdere.",
-    dashboardImageAlt: "Schermata della dashboard DevOracle",
+    dashboardImageAlt:
+      "App desktop DevOracle: suggerimenti di coaching AI in tempo reale accanto alla videochiamata",
     body:
       "DevOracle ti suggerisce tempistiche, framework, domande di approfondimento—mentre Zoom, Meet o Teams restano puliti. L’interlocutore vede sicurezza. Tu hai il piano.",
   },

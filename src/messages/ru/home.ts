@@ -2,9 +2,10 @@ export const home = {
   hero: {
     badge: "AI в реальном времени · незаметный интерфейс · Mac и Windows",
     titleBefore: "Это",
-    titleHighlight: "локальный копилот",
+    titleHighlight: "локальный ИИ‑копилот",
     titleAfter: "для собеседований, которые нельзя провалить.",
-    dashboardImageAlt: "Скриншот панели управления DevOracle",
+    dashboardImageAlt:
+      "Настольное приложение DevOracle: подсказки ИИ для собеседования рядом с видеозвонком",
     body: "DevOracle подсказывает тайминг, подходы и следующие шаги, пока окно звонка остается чистым.",
   },
   demo: {

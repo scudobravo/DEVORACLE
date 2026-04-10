@@ -1,9 +1,10 @@
 export const meta = {
   siteName: "DevOracle",
+  logoAlt: "Logo DevOracle — app di coaching AI per colloqui tecnici",
   home: {
-    title: "DevOracle — Coaching AI per colloqui in tempo reale | Invisibile alla condivisione schermo",
+    title: "DevOracle — Coaching AI per Zoom, Meet e Teams",
     description:
-      "Il copilota per candidati ambiziosi. Suggerimenti AI live su macOS e Windows—ottimizzato per Zoom, Meet e Teams—mentre i recruiter vedono solo te al meglio.",
+      "Coaching AI on-device per colloqui tecnici—invisibile accanto a Zoom, Meet e Teams. Vedi i piani e scarica l’app desktop.",
     keywords: [
       "coach colloquio AI",
       "coaching colloquio tempo reale",
@@ -15,12 +16,12 @@ export const meta = {
       "strumento colloquio invisibile",
       "DevOracle",
     ],
-    ogTitle: "DevOracle — Coaching AI in tempo reale per colloqui tecnici",
+    ogTitle: "DevOracle — Coaching AI per Zoom, Meet e Teams",
     ogDescription:
-      "Affila ogni risposta al volo. UI stealth, privacy da desktop, pensato per i colloqui ad alta posta.",
-    twitterTitle: "DevOracle — AI in tempo reale per colloqui tecnici",
+      "Coaching AI on-device per colloqui tecnici—invisibile accanto a Zoom, Meet e Teams. Vedi i piani e scarica l’app desktop.",
+    twitterTitle: "DevOracle — Coaching AI per Zoom, Meet e Teams",
     twitterDescription:
-      "Coaching live che resta fuori dalla registrazione—pensato per i loop FAANG e le startup.",
+      "Coaching AI on-device per colloqui tecnici—invisibile accanto a Zoom, Meet e Teams. Vedi i piani e scarica l’app desktop.",
   },
   contact: {
     title: "Contatti — DevOracle",

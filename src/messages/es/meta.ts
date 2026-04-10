@@ -1,9 +1,10 @@
 export const meta = {
   siteName: "DevOracle",
+  logoAlt: "Logo DevOracle — app de coaching de entrevistas con IA",
   home: {
-    title: "DevOracle — Coaching de entrevistas con IA en tiempo real | Invisible en pantalla compartida",
+    title: "DevOracle — Coaching IA para Zoom, Meet y Teams",
     description:
-      "El copiloto de entrevistas para candidatos ambiciosos. Sugerencias IA en vivo en macOS y Windows, optimizadas para Zoom, Meet y Teams.",
+      "Coaching con IA en el dispositivo para entrevistas técnicas—discreto junto a Zoom, Meet y Teams. Ver precios y descargar la app de escritorio.",
     keywords: [
       "coach de entrevistas con IA",
       "coaching de entrevistas en tiempo real",
@@ -14,12 +15,12 @@ export const meta = {
       "herramienta de entrevista invisible",
       "DevOracle",
     ],
-    ogTitle: "DevOracle — Coaching IA en tiempo real para entrevistas técnicas",
+    ogTitle: "DevOracle — Coaching IA para Zoom, Meet y Teams",
     ogDescription:
-      "Mejora cada respuesta al instante. Interfaz discreta y privacidad de nivel escritorio para entrevistas de alto impacto.",
-    twitterTitle: "DevOracle — IA en tiempo real para entrevistas técnicas",
+      "Coaching con IA en el dispositivo para entrevistas técnicas—discreto junto a Zoom, Meet y Teams. Ver precios y descargar la app de escritorio.",
+    twitterTitle: "DevOracle — Coaching IA para Zoom, Meet y Teams",
     twitterDescription:
-      "Coaching en vivo que no queda en el registro, ideal para loops tipo FAANG y procesos de startups.",
+      "Coaching con IA en el dispositivo para entrevistas técnicas—discreto junto a Zoom, Meet y Teams. Ver precios y descargar la app de escritorio.",
   },
   contact: {
     title: "Contacto — DevOracle",

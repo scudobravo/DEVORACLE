@@ -24,7 +24,7 @@ export function HomeMarketingPage({ locale, dict }: HomeMarketingPageProps) {
   return (
     <>
       <div className="grain-overlay" aria-hidden />
-      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} />
+      <Navigation locale={locale} nav={dict.nav} switcher={dict.localeSwitcher} logoAlt={dict.meta.logoAlt} />
 
       <section className="relative overflow-hidden px-6 pb-20 pt-32">
         <div className="mx-auto flex max-w-6xl flex-col items-center text-center">
@@ -146,7 +146,7 @@ export function HomeMarketingPage({ locale, dict }: HomeMarketingPageProps) {
               <div key={step.n} className="relative">
                 <span className="absolute -left-4 -top-10 z-0 text-8xl font-black text-indigo-500/10">{step.n}</span>
                 <div className="relative z-10">
-                  <h4 className="font-headline mb-3 text-xl font-bold text-indigo-400">{step.t}</h4>
+                  <h3 className="font-headline mb-3 text-xl font-bold text-indigo-400">{step.t}</h3>
                   <p className="text-sm text-on-surface-variant">{step.d}</p>
                 </div>
               </div>
@@ -336,7 +336,7 @@ export function HomeMarketingPage({ locale, dict }: HomeMarketingPageProps) {
           <div className="max-w-md">
             <Image
               src="/logo-DEVORACLE.svg"
-              alt={dict.meta.siteName}
+              alt={dict.meta.logoAlt}
               width={200}
               height={46}
               className="mb-4 h-8 w-auto"
