@@ -4,7 +4,6 @@ import { buildHreflangLanguageUrls } from "@/lib/hreflang-alternates";
 import { getSiteUrl } from "@/lib/site-url";
 import { withLocale } from "@/lib/i18n-path";
 
-/** Path interni senza segmento lingua (`/` = home marketing). */
 const marketingPaths = [
   "/",
   "/contact",
@@ -21,7 +20,7 @@ function localizedUrl(path: (typeof marketingPaths)[number], locale: Locale): st
   return `${base}${withLocale(path, locale)}`;
 }
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export function getMarketingSitemapEntries(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
 
   for (const path of marketingPaths) {
