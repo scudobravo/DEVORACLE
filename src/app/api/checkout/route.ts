@@ -38,6 +38,12 @@ export async function POST(req: Request) {
           product: "DevOracle",
           plan: "pro",
         },
+        subscription_data: {
+          metadata: {
+            product: "DevOracle",
+            plan: "pro",
+          },
+        },
         success_url: `${baseUrl}/${loc}/welcome?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${baseUrl}/${loc}/#pricing`,
         allow_promotion_codes: true,
