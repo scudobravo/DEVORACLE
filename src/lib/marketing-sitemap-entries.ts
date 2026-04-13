@@ -8,9 +8,6 @@ const marketingPaths = [
   "/",
   "/contact",
   "/download",
-  "/login",
-  "/signup",
-  "/welcome",
   "/privacy",
   "/terms",
 ] as const;

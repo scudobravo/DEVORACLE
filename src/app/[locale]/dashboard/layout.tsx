@@ -1,6 +1,11 @@
+import type { Metadata } from "next";
 import { notFound, redirect } from "next/navigation";
 import { createClient } from "@/lib/supabase/server";
 import { isLocale } from "@/lib/i18n-config";
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+};
 
 type LayoutProps = {
   children: React.ReactNode;
