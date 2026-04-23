@@ -4,12 +4,13 @@ import { getSiteUrl } from "@/lib/site-url";
 
 export default function robots(): MetadataRoute.Robots {
   const dashboardDisallows = locales.map((locale) => `/${locale}/dashboard`);
+  const authDisallows = locales.flatMap((locale) => [`/${locale}/login`, `/${locale}/signup`, `/${locale}/welcome`]);
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
-        disallow: [...dashboardDisallows, "/api/", "/auth/"],
+        disallow: [...dashboardDisallows, ...authDisallows, "/api/", "/auth/", "/*?*"],
       },
     ],
     sitemap: `${getSiteUrl()}/sitemap.xml`,

@@ -19,6 +19,20 @@ function firstSegment(pathname: string) {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    const normalized = request.nextUrl.clone();
+    normalized.pathname = pathname.slice(0, -1);
+    return NextResponse.redirect(normalized, 308);
+  }
+
+  const legacyBlogMatch = pathname.match(/^\/(en|de|it|es|pt|ru)\/blog(?:\/(.+))?$/);
+  if (legacyBlogMatch) {
+    const locale = legacyBlogMatch[1];
+    const slug = legacyBlogMatch[2];
+    const target = slug ? `/${locale}/guides/${slug}` : `/${locale}/guides`;
+    return NextResponse.redirect(new URL(target, request.url), 308);
+  }
+
   if (skipLocaleRouting(pathname)) {
     return updateSession(request);
   }

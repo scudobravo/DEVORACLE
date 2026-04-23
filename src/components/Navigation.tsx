@@ -20,6 +20,8 @@ export function Navigation({ locale, nav, switcher, logoAlt }: NavigationProps) 
   const home = withLocale("/", locale);
 
   const links = [
+    { href: withLocale("/ai-tools", locale), label: nav.aiTools },
+    { href: withLocale("/guides", locale), label: nav.guides },
     { href: `${home}#features`, label: nav.features },
     { href: `${home}#how-it-works`, label: nav.howItWorks },
     { href: `${home}#pricing`, label: nav.pricing },
@@ -45,7 +47,7 @@ export function Navigation({ locale, nav, switcher, logoAlt }: NavigationProps) 
             <Link
               key={l.href}
               href={l.href}
-              className="text-xs font-semibold uppercase tracking-wider text-[#c7c4d7] transition-colors duration-300 hover:text-indigo-300"
+              className="text-xs font-semibold uppercase tracking-wider text-on-surface-variant transition-colors duration-300 hover:text-indigo-300"
             >
               {l.label}
             </Link>
@@ -80,7 +82,7 @@ export function Navigation({ locale, nav, switcher, logoAlt }: NavigationProps) 
               <Link
                 key={l.href}
                 href={l.href}
-                className="text-sm font-semibold uppercase tracking-wider text-[#c7c4d7] transition-colors hover:text-indigo-300"
+                className="text-sm font-semibold uppercase tracking-wider text-on-surface-variant transition-colors hover:text-indigo-300"
                 onClick={() => setOpen(false)}
               >
                 {l.label}

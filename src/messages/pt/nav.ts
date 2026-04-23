@@ -1,5 +1,7 @@
 export const nav = {
   homeAria: "Início do DevOracle",
+  aiTools: "Ferramentas de IA",
+  guides: "Guias",
   features: "Recursos",
   howItWorks: "Como funciona",
   pricing: "Preços",

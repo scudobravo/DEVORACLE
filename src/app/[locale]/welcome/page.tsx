@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.welcome.title,
     description: dict.meta.welcome.description,
     alternates: buildLocaleAlternates(withLocale("/welcome", locale)),
+    robots: { index: false, follow: false },
   };
 }
 

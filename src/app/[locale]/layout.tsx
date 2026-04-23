@@ -8,6 +8,7 @@ import {
 import { notFound } from "next/navigation";
 import {
   isLocale,
+  type Locale,
   localeToHtmlLang,
   localeToOgLocale,
   locales,
@@ -22,6 +23,9 @@ import {
   getOrganizationJsonLd,
   getSoftwareApplicationJsonLd,
 } from "@/lib/structured-data";
+import { AutoBreadcrumbs } from "@/components/seo/AutoBreadcrumbs";
+import { BreadcrumbLabelsProvider } from "@/components/seo/BreadcrumbLabelsContext";
+import { buildGuidePages, getSeoBundle } from "@/lib/seo-locales";
 
 const bricolage = Bricolage_Grotesque({
   subsets: ["latin", "latin-ext"],
@@ -103,6 +107,16 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
   if (!isLocale(loc)) notFound();
 
   const dict = getDictionary(loc);
+  const locale = loc as Locale;
+  const seo = getSeoBundle(locale);
+  const bySegment: Record<string, string> = {
+    "ai-tools": dict.nav.aiTools,
+    guides: dict.nav.guides,
+  };
+  for (const p of [...buildGuidePages(seo), ...seo.aiToolsPages]) {
+    const t = p.title;
+    bySegment[p.slug] = t.length > 64 ? `${t.slice(0, 61)}…` : t;
+  }
   const htmlLang = localeToHtmlLang[loc];
   const faqLd = getFaqPageJsonLd(dict);
   const softwareLd = getSoftwareApplicationJsonLd(dict);
@@ -156,7 +170,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps) {
             gtag('config', '${GA_MEASUREMENT_ID}');
           `}
         </Script>
-        {children}
+        <BreadcrumbLabelsProvider
+          value={{ home: seo.common.breadcrumbHome, bySegment }}
+        >
+          <AutoBreadcrumbs />
+          {children}
+        </BreadcrumbLabelsProvider>
       </body>
     </html>
   );

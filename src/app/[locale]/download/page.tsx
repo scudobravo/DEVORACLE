@@ -18,6 +18,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.download.title,
     description: dict.meta.download.description,
     alternates: buildLocaleAlternates(withLocale("/download", locale)),
+    robots: { index: false, follow: true },
   };
 }
 

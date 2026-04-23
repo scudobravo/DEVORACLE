@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.login.title,
     description: dict.meta.login.description,
     alternates: buildLocaleAlternates(withLocale("/login", locale)),
+    robots: { index: false, follow: false },
   };
 }
 

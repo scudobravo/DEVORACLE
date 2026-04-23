@@ -20,6 +20,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     title: dict.meta.contact.title,
     description: dict.meta.contact.description,
     alternates: buildLocaleAlternates(withLocale("/contact", locale)),
+    robots: { index: false, follow: true },
   };
 }
 

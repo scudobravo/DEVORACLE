@@ -1,5 +1,7 @@
 export const nav = {
   homeAria: "Devoracle home",
+  aiTools: "AI Tools",
+  guides: "Guides",
   features: "Features",
   howItWorks: "How it works",
   pricing: "Pricing",

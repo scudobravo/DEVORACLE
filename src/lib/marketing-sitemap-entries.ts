@@ -6,10 +6,14 @@ import { withLocale } from "@/lib/i18n-path";
 
 const marketingPaths = [
   "/",
-  "/contact",
-  "/download",
-  "/privacy",
-  "/terms",
+  "/ai-tools",
+  "/ai-tools/devoracle-interview-copilot",
+  "/guides",
+  "/guides/best-ai-tools-for-technical-interviews",
+  "/guides/how-to-use-devoracle",
+  "/guides/devoracle-alternatives",
+  "/guides/devoracle-vs-chatgpt",
+  "/guides/interview-prep-playbook-2026",
 ] as const;
 
 function localizedUrl(path: (typeof marketingPaths)[number], locale: Locale): string {
@@ -27,7 +31,7 @@ export function getMarketingSitemapEntries(): MetadataRoute.Sitemap {
       entries.push({
         url: localizedUrl(path, locale),
         changeFrequency: "weekly",
-        priority: path === "/" ? 1 : path === "/privacy" || path === "/terms" ? 0.5 : 0.7,
+        priority: path === "/" ? 1 : path === "/ai-tools" || path === "/guides" ? 0.9 : 0.8,
         alternates: {
           languages,
         },
